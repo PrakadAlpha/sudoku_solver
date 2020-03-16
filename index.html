@@ -4,10 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sudoku Solver</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
   <script src="./index.js" defer></script>
 </head>
 <body>
-  <h1>Sudoku Solver</h1>
+  <div class="sudokumain">
+    <header class="head">
+      Sudoku Solver
+    </header>
+    <section class="timer">
+      Timer Start and Stop
+    </section>
+    <div class="main">
+      <section class="grid">
+        <p style="text-align: center;">Fill the Grid</p>
+        <div class="sudoku">
+          <div class="row">
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+        </div>
+        <div class="row">
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+        </div>
+        <div class="row">
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+        </div>
+        <div class="row">
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+        </div>
+        <div class="row">
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+        </div>
+        <div class="row">
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+        </div>
+        <div class="row">
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+        </div>
+        <div class="row">
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+        </div>
+        <div class="row">
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+          <span><input type="number" class="cell" pattern="[0-9]*" inputmode="numeric" size="1" maxlength="1" min="1" max="9" autocomplete="off" tabindex="0"></span>
+        </div>
+        </div>
+      </section>
+      <section class="keypad">
+        Enter the values
+      </section>
+  </div>
+    <footer class="foot">
+      All rights reserved
+    </footer>
+  </div>
 </body>
 </html>

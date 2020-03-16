@@ -1,0 +1,84 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #3f51b5;
+}
+
+header{
+  color: #fff;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 35px;
+}
+
+.timer{
+  padding: 10px;
+}
+
+.sudokumain{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-gap: 10px;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.sudoku{
+  width: 450px;
+  margin-left: 80px;
+  border-top: 1px solid black;
+}
+
+
+.cell{
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+  border-right: 1px solid black;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.row{
+  border-bottom: 2px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  width: 450px;
+  margin: 0;
+  padding: 7px;
+}
+.grid{
+  padding: 10px;
+}
+
+.keypad{
+  padding: 10px;
+}
+
+.head, .timer, .grid, .keypad, .foot{
+  border: 1px solid black;
+}
+
+.foot{
+  margin-bottom: 10px;
+  padding: 5px;
+}
